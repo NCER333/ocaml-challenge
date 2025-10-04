@@ -10,7 +10,7 @@ let mux2 s0 a b = (a && not s0) || (b && s0);;
 let new_a1 = mux2 s0 a2 a3*)
 
 (*ora sfrutto s1 per scegliere tra i valori rimasti dopo il passaggio a s0
-se s1 è true significa che verrà scelto il 3 o il 2 a seconda di quale è passato per s0, in alternativa con s1 false viene preso 0 o 1*)
+se s1 è true significa che verrà scelto il 3 o il 2 a se2conda di quale è passato per s0, in alternativa con s1 false viene preso 0 o 1*)
 
 (*let mux4 = mux2 s1 new_a0 new_a1*)
 
@@ -23,3 +23,4 @@ assert(mux4 false false false true false true = false);;
 assert(mux4 false true false true false true = true);;
 assert(mux4 true false false true false true = false);;
 assert(mux4 true true false true false true = true);;
+print_endline "Tutti i test passati!"
