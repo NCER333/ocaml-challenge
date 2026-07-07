@@ -25,3 +25,6 @@ assert(best_offer None None None = None);;
 assert(best_offer None (Some 300) None = Some 300 );;
 
 print_endline "Test passati"
+
+let best_offer a b c = 
+  
